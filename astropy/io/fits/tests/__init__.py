@@ -20,7 +20,7 @@ class FitsTestCase:
         fits.conf.enable_record_valued_keyword_cards = True
         fits.conf.extension_name_case_sensitive = False
         fits.conf.strip_header_whitespace = True
-        fits.conf.use_memmap = True
+        fits.conf.use_memmap = False
 
     def teardown(self):
         if hasattr(self, 'temp_dir') and os.path.exists(self.temp_dir):

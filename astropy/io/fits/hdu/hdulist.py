@@ -52,7 +52,7 @@ def fitsopen(name, mode='readonly', memmap=None, save_backup=False,
     memmap : bool, optional
         Is memory mapping to be used? This value is obtained from the
         configuration item ``astropy.io.fits.Conf.use_memmap``.
-        Default is `True`.
+        Default is `False`.
 
     save_backup : bool, optional
         If the file was opened in update or append mode, this ensures that

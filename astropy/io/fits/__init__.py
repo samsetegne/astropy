@@ -40,7 +40,7 @@ class Conf(_config.ConfigNamespace):
         'headers.  Otherwise the values are returned verbatim, with all '
         'whitespace intact.')
     use_memmap = _config.ConfigItem(
-        True,
+        False,
         'If True, use memory-mapped file access to read/write the data in '
         'FITS files. This generally provides better performance, especially '
         'for large files, but may affect performance in I/O-heavy '
